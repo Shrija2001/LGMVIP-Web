@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>To Do List</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-	<link rel="stylesheet" href="main.css" />
 </head>
+
+
+<h2 ALIGN="CENTER">Registration Form</h2>
 <body>
+    <div id="container">
+        <div id="nameDiv" class="input">Name: <input id="name" type="text" /></div>
+        <div class="input">Email: <input id="email" type="text" /></div>
+        <div class="input">Branch: <input id="Branch" type="text" /></div>
+        <div class="input">Gender: <input id="gender" type="text" /></div>
 
-	<header>
-		<h1>To Do List</h1>
-		<form id="new-task-form">
-			<input 
-				type="text" 
-				name="new-task-input" 
-				id="new-task-input" 
-				placeholder="Type Something" />
-			<input 
-				type="submit"
-				id="new-task-submit" 
-				value="Add task" />
-		</form>
-	</header>
-	<main>
-		<section class="task-list">
-			<h2>Tasks</h2>
+        <button id="Submit">Submit</button>
 
-			<div id="tasks">
+    </div>
 
-				<!-- <div class="task">
-					<div class="content">
-						<input 
-							type="text" 
-							class="text" 
-							value="A new task"
-							readonly>
-					</div>
-					<div class="actions">
-						<button class="edit">Edit</button>
-						<button class="delete">Delete</button>
-					</div>
-				</div> -->
+    <table id="display">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Branch</th>
+            <th>Gender</th>
+        </tr>
+    </table>
 
-			</div>
-		</section>
-	</main>
 
-	<script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
